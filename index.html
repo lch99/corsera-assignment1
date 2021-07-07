@@ -15,17 +15,19 @@
      <h1>Lunch Checker</h1>
 
          <div class="form-group">
-             <input id="lunch-menu" ng-model = "value" type="text"
-             placeholder="list comma separated dishes you usually have for lunch.  P.S ,  , is counted as one item"
+             <input id="lunch-menu" ng-style="borderStyle.style" ng-model = "value" type="text"
+             placeholder="list comma separated dishes you usually have for lunch.  P.S ,(more than 1 space), is counted as one item"
              class="form-control">
          </div>
          <div class="form-group">
              <button ng-click = "click()" class="btn btn-default">Check If Too Much</button>
          </div>
-         <div  class="form-group message">
+         <div class="form-group message">
            <!-- Your message can go here. -->
-           {{display()}}
-         </div>
+           <p ng-style="descriptionStyle.style">
+              {{display()}}
+           </p>
+          </div>
    </div>
 
 </body>
