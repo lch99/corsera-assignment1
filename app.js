@@ -38,3 +38,16 @@ function ($scope, $filter) {
       if(index <= 3 && index >= 1){
         $scope.description = "Enjoy!"
       }else if(index > 3){
+        $scope.description = "Too much!"
+      }else if (index == 0) {
+          $scope.description = "Please enter data first."
+      }
+    }
+
+    return  $scope.description;
+
+  };
+
+});
+
+})();
